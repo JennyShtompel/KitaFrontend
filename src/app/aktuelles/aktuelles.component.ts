@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HostListener} from "@angular/core";
+
+declare const window: any;
 
 @Component({
   selector: 'app-aktuelles',
@@ -9,7 +12,11 @@ export class AktuellesComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
   }
 
+  
 }
+
+

@@ -1,22 +1,4 @@
 ﻿
-//  /* Set a background image by replacing the URL below */
-/* .card-body {
-  background: url('../../assets/img/bunteFarben.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-
-}
-
-.btn{
-  height:50px;
-  width:100px;
-  font-size: 24px;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  background-color:cyan;
-}  */
-
  //Smooth effect Login-button
 .btn{
   height:50px;
@@ -24,6 +6,7 @@
   font-size: 24px;
   font-family: Comic Sans MS, Comic Sans, cursive;
   background-color:rgb(35, 194, 194);
+  color:white;
 }
 
 .nav-item {
@@ -84,8 +67,7 @@
 
  //View the text "Buntefarbe kindergarten"
 .five {
-  background: purple2;
-  padding: 50px 100px 50px 170px;
+  padding: 35px 100px 10px 110px;
   text-align: center;
 } 
 .five h1 {
@@ -153,48 +135,6 @@
 .view {
   height: 100vh !important;
 }
-/*
-.top-nav-collapse  {
-  background-color: #4a4a4d !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #5a5b61 !important;
-  }
-}
-.rgba-gradient .full-bg-img {
-  background: linear-gradient(45deg, rgba(83, 125, 210, 0.4), rgba(178, 30, 123, 0.4) 100%);
-}
-.full-bg-img {
-  height: 100%;
-}
-.card {
-  background-color: rgba(229, 228, 255, 0.2);
-}
-.md-form .prefix {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-.md-form label {
-  color: #0c0b0b;
-}
-h6 {
-  line-height: 1.7;
-}
-@media (max-width: 740px) {
-  .full-height,
-  .full-height body,
-  .full-height header,
-  .full-height header .view {
-    height: 1040px;
-  } 
-} */
-
-
 
 //scroll arrow
 .wrapper {
@@ -234,12 +174,15 @@ h6 {
   font-size: 100%;
 }
 
-    img{
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: auto;
-      max-height: 50%;
-      max-width: 50%;
-      float: left; 
-    }
+img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  max-height: 50%;
+  max-width: 50%;
+  float: left; 
+}
  
+.navbar-nav{
+  padding:50px 10;
+}
