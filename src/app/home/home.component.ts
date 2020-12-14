@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit,HostListener  } from '@angular/core';
 
 
@@ -8,15 +9,19 @@ import '../../styles.scss';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly viewportScroller: ViewportScroller) { }
 
   public ngOnInit() {
   }
-  
-  @HostListener("window:scroll", [])
 
+  public onClick(elementId: string): void { 
+    this.viewportScroller.scrollToAnchor(elementId);
+  }
+
+  @HostListener("window:scroll", [])
   onWindowScroll() {
 
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -27,9 +32,7 @@ export class HomeComponent implements OnInit {
       element?.classList.add('bg-secondary');
     }
   }
-  public login(){
-    alert('Login clicked');
-  }
+
 }
 /* $('.nav-menu').addClass('custom-navbar');
 } else {
