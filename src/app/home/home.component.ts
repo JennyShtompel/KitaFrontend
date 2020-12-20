@@ -1,6 +1,4 @@
-import { ViewportScroller } from '@angular/common';
 import { Component, OnInit,HostListener  } from '@angular/core';
-
 
 import '../../styles.scss';
 
@@ -12,13 +10,13 @@ import '../../styles.scss';
 
 export class HomeComponent implements OnInit {
 
-  constructor(private readonly viewportScroller: ViewportScroller) { }
+  constructor() { }
 
   public ngOnInit() {
-  }
+  }  
 
-  public onClick(elementId: string): void { 
-    this.viewportScroller.scrollToAnchor(elementId);
+  public scrollToElement($element: any){
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
   @HostListener("window:scroll", [])

@@ -19,12 +19,8 @@ import { ErnahrungComponent } from './ernahrung/ernahrung.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-
-
 @NgModule({
-  declarations: [
-    
+  declarations: [    
     AppComponent,
     HomeComponent,
     AktuellesComponent,
